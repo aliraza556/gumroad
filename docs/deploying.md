@@ -1,4 +1,5 @@
-- [Deploying](#deploying)
+- [Platform deployment guides](#platform-deployment-guides)
+- [Deploying (internal)](#deploying)
   - [⛔ Blockers](#-blockers)
   - [Prerequisites](#prerequisites)
   - [Automatic way](#automatic-way)
@@ -12,6 +13,25 @@
   - [Hotfixing workers only](#hotfixing-workers-only)
 - [Deploying to a branch app](#deploying-to-a-branch-app)
 - [Deploying to staging](#deploying-to-staging)
+
+---
+
+## Platform deployment guides
+
+If you're deploying Gumroad to a cloud platform, see these guides:
+
+| Platform | Guide | Description |
+|----------|-------|-------------|
+| **Heroku** | [deploying-heroku.md](./deploying-heroku.md) | Deploy to Heroku with JawsDB, Redis, and Bonsai |
+| **Railway** | [deploying-railway.md](./deploying-railway.md) | Deploy to Railway with native database support |
+
+These guides include:
+- Step-by-step setup instructions
+- Database and service configuration
+- Environment variable setup
+- Scaling recommendations
+- Troubleshooting tips
+- Cost estimation
 
 ---
 

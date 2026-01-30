@@ -27,6 +27,7 @@
   - [Push Notifications](#push-notifications)
   - [Common Development Tasks](#common-development-tasks)
   - [Linting](#linting)
+- [Deployment](#deployment)
 
 ## Getting Started
 
@@ -280,3 +281,14 @@ bin/rspec spec/requests/balance_pages_spec.rb
 ```
 
 This will disable Spring for the current session, allowing the tests to run without triggering the `fork()`-related crash.
+
+## Deployment
+
+Gumroad can be deployed to various cloud platforms. See our deployment guides:
+
+| Platform | Guide |
+|----------|-------|
+| **Heroku** | [docs/deploying-heroku.md](docs/deploying-heroku.md) |
+| **Railway** | [docs/deploying-railway.md](docs/deploying-railway.md) |
+
+For internal deployment documentation (Nomad/AWS), see [docs/deploying.md](docs/deploying.md).
