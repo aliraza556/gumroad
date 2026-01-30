@@ -140,7 +140,7 @@ Railway automatically sets the `REDIS_URL` environment variable.
 
 **Via CLI:**
 ```bash
-railway add --database mongodb
+railway add --database mongo
 ```
 
 Railway automatically sets the `MONGO_URL` environment variable.
