@@ -39,6 +39,7 @@ RUN RAILS_ENV=production \
     SECRET_KEY_BASE=dummy \
     DATABASE_NAME=dummy \
     DATABASE_HOST=localhost \
+    DATABASE_PORT=3306 \
     DATABASE_USERNAME=dummy \
     DATABASE_PASSWORD=dummy \
     REDIS_URL=redis://localhost:6379 \
