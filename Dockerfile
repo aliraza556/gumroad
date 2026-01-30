@@ -6,19 +6,14 @@ RUN apt-get update -qq && apt-get install -y --no-install-recommends \
     build-essential \
     curl \
     git \
-    libmysqlclient-dev \
     default-libmysqlclient-dev \
     libvips-dev \
     imagemagick \
     ffmpeg \
-    pdftk \
-    wkhtmltopdf \
     libyaml-dev \
     libssl-dev \
     libreadline-dev \
     zlib1g-dev \
-    nodejs \
-    npm \
     && rm -rf /var/lib/apt/lists/*
 
 # Install Node.js 20
