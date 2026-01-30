@@ -2,7 +2,7 @@
 # See: https://nixpacks.com/docs/configuration/file
 
 [phases.setup]
-aptPkgs = ["imagemagick", "ffmpeg", "libvips-dev", "pdftk", "wkhtmltopdf"]
+aptPkgs = ["imagemagick", "ffmpeg", "libvips-dev", "pdftk", "wkhtmltopdf", "libyaml-dev", "libssl-dev", "libreadline-dev", "zlib1g-dev"]
 
 [phases.install]
 cmds = [
