@@ -3,14 +3,13 @@
 
 [phases.setup]
 nixPkgs = [
-    "nodejs-20_x",
-    "ruby_3_4",
+    "nodejs_20",
+    "ruby_3_3",
     "imagemagick",
     "ffmpeg",
-    "vips",
-    "wkhtmltopdf"
+    "vips"
 ]
-aptPkgs = ["pdftk"]
+aptPkgs = ["pdftk", "wkhtmltopdf"]
 
 [phases.install]
 cmds = [
