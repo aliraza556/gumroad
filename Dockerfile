@@ -34,8 +34,16 @@ RUN npm install
 # Copy the rest of the application
 COPY . .
 
-# Precompile assets
-RUN RAILS_ENV=production SECRET_KEY_BASE=dummy bundle exec rails assets:precompile
+# Precompile assets (provide dummy env vars for build)
+RUN RAILS_ENV=production \
+    SECRET_KEY_BASE=dummy \
+    DATABASE_NAME=dummy \
+    DATABASE_HOST=localhost \
+    DATABASE_USERNAME=dummy \
+    DATABASE_PASSWORD=dummy \
+    REDIS_URL=redis://localhost:6379 \
+    MONGODB_URL=mongodb://localhost:27017/gumroad \
+    bundle exec rails assets:precompile
 
 # Expose port
 EXPOSE 3000
