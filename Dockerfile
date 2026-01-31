@@ -44,6 +44,8 @@ RUN RAILS_ENV=production \
     DATABASE_PASSWORD=dummy \
     REDIS_URL=redis://localhost:6379 \
     MONGODB_URL=mongodb://localhost:27017/gumroad \
+    MEMCACHE_SERVERS=localhost:11211 \
+    REVISION=build \
     bundle exec rails assets:precompile
 
 # Expose port
