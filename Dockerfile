@@ -49,6 +49,7 @@ RUN RAILS_ENV=production \
     RPUSH_REDIS_HOST=localhost:6379 \
     RACK_ATTACK_REDIS_HOST=localhost:6379 \
     MONGO_DATABASE_URL=mongodb://localhost:27017/gumroad \
+    MONGO_DATABASE_NAME=gumroad \
     MEMCACHE_SERVERS=localhost:11211 \
     ELASTICSEARCH_HOST=http://localhost:9200 \
     REVISION=build \
