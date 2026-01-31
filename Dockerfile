@@ -55,7 +55,7 @@ RUN RAILS_ENV=production \
     MEMCACHE_SERVERS=localhost:11211 \
     ELASTICSEARCH_HOST=http://localhost:9200 \
     REVISION=build \
-    bundle exec rails js:routes:typescript
+    bundle exec rails js:export
 
 # Precompile assets
 RUN RAILS_ENV=production \
