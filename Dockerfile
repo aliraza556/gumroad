@@ -57,6 +57,9 @@ RUN RAILS_ENV=production \
     REVISION=build \
     bundle exec rails js:export
 
+# Generate icon names for SCSS and TypeScript
+RUN node lib/findIcons.js
+
 # Precompile assets
 RUN RAILS_ENV=production \
     SECRET_KEY_BASE=dummy_secret_key_base_for_build \
