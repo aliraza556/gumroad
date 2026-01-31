@@ -37,14 +37,20 @@ COPY . .
 # Precompile assets (provide dummy env vars for build)
 RUN RAILS_ENV=production \
     SECRET_KEY_BASE=dummy \
+    DEVISE_SECRET_KEY=dummy \
     DATABASE_NAME=dummy \
     DATABASE_HOST=localhost \
     DATABASE_PORT=3306 \
     DATABASE_USERNAME=dummy \
     DATABASE_PASSWORD=dummy \
+    REDIS_HOST=localhost:6379 \
     REDIS_URL=redis://localhost:6379 \
+    SIDEKIQ_REDIS_HOST=localhost:6379 \
+    RPUSH_REDIS_HOST=localhost:6379 \
+    RACK_ATTACK_REDIS_HOST=localhost:6379 \
     MONGODB_URL=mongodb://localhost:27017/gumroad \
     MEMCACHE_SERVERS=localhost:11211 \
+    ELASTICSEARCH_HOST=http://localhost:9200 \
     REVISION=build \
     bundle exec rails assets:precompile
 
